@@ -1,0 +1,91 @@
+ *{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3a93ec, #bb10e6);
+    padding: 10px;
+}
+.toDo-app{
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 20px 70px 30px;
+    border-radius: 10px;
+}
+.toDo-app h2{
+    color: #222;
+    text-align: center;
+    display: flex;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    border: none;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    padding: 16px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(https://t3.ftcdn.net/jpg/07/79/80/36/240_F_779803625_Vs6kAkZ3YeCnwU9aOS6p4bfUsATGRlZx.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+    background: url(https://image.shutterstock.com/image-vector/3d-check-mark-icon-isolated-260nw-2202400771.jpg);
+    background: #ff5945;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #555;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #9fa5af;
+}
